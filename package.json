@@ -1,0 +1,59 @@
+{
+  "name": "zombiebox-platform-samsung",
+  "version": "2.0.0",
+  "description": "Samsung Orsay platfrom adapter for ZombieBox Smart TV framework",
+  "author": "Interfaced (http://interfaced.tv)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:interfaced/zombiebox-platform-samsung.git"
+  },
+  "module": "./lib",
+  "keywords": [
+    "orsay",
+    "samsung",
+    "smart-tv",
+    "zombiebox",
+    "zombiebox-platform"
+  ],
+  "files": [
+    "duties/",
+    "externs/",
+    "icon/",
+    "lib/",
+    "index.js",
+    "package.json",
+    "CHANGELOG.md",
+    "DOCS.md",
+    "LICENSE",
+    "MIGRATION.md",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=8.9",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint index.js lib externs"
+  },
+  "dependencies": {
+    "fs-extra": "^8.0.1",
+    "ip": "^1.1.5",
+    "lodash": "^4.17.11",
+    "strftime": "^0.10.0",
+    "xmlbuilder": "^13.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-interfaced": "^1.5.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-interfaced": "^1.6.1",
+    "eslint-plugin-node": "^8.0.1",
+    "zombiebox": "^2.0.1"
+  },
+  "peerDependencies": {
+    "zombiebox": "^2.0.1"
+  }
+}

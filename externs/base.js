@@ -1,0 +1,6 @@
+const Common = {};
+
+
+/**
+ */
+Common.API = {};
