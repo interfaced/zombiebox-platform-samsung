@@ -1,3 +1,9 @@
+# 2.1.0 (15.09.2019)
+
+## Features
+* Removed video container and updated to ZombieBox 2.1.
+* Updated to ESLint 6.
+
 # 2.0.0 (18.06.2019)
 
 ## Features

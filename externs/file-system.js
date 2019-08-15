@@ -1,5 +1,5 @@
 /**
- * @constructor
+ * @class
  */
 function SamsungFileSystem() {}
 
@@ -26,7 +26,7 @@ SamsungFileSystem.prototype.deleteCommonFile = function(path) {};
 
 
 /**
- * @param path
+ * @param {?} path
  * @return {boolean}
  */
 SamsungFileSystem.prototype.createCommonDir = function(path) {};
@@ -83,7 +83,7 @@ SamsungFileSystem.prototype.readDir = function(directoryPath) {};
 /**
  * Internal class.
  * @param {string} path
- * @constructor
+ * @class
  */
 function SamsungFileSystemPointer(path) {}
 

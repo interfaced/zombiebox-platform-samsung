@@ -1,5 +1,5 @@
 /**
- * @constructor
+ * @class
  */
 const PluginNetwork = function() {};
 
@@ -8,16 +8,16 @@ const PluginNetwork = function() {};
  * 1 if connected,
  * 0 if not connected,
  * -1 if error
- * @param {number=} opt_interfaceType type of interface (Wired/Wireless) 1 = wired, 0 = wireless
+ * @param {number=} interfaceType type of interface (Wired/Wireless) 1 = wired, 0 = wireless
  * @return {number}
  */
-PluginNetwork.prototype.CheckPhysicalConnection = function(opt_interfaceType) {};
+PluginNetwork.prototype.CheckPhysicalConnection = function(interfaceType) {};
 
 
 /**
  * @param {number} interfaceType
  * @return {number} 1 if HTTP is operating successfully, 0 if HTTP is not available, -1 if error
- * @constructor
+ * @class
  */
 PluginNetwork.prototype.CheckHTTP = function(interfaceType) {
 	return 0;
@@ -36,10 +36,10 @@ PluginNetwork.prototype.GetIP = function(interfaceType) {};
 
 
 /**
- * @param {number=} opt_interfaceType type of interface (Wired/Wireless) 1 = wired, 0 = wireless
+ * @param {number=} interfaceType type of interface (Wired/Wireless) 1 = wired, 0 = wireless
  * @return {string}
  */
-PluginNetwork.prototype.GetMAC = function(opt_interfaceType) {};
+PluginNetwork.prototype.GetMAC = function(interfaceType) {};
 
 
 PluginNetwork.prototype.GetActiveType = function() {};

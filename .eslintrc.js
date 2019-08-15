@@ -1,42 +1,27 @@
-const {join, dirname} = require('path');
-const configInterfacedEsm = require('eslint-config-interfaced/overrides/esm');
-const configInterfacedNode = require('eslint-config-interfaced/overrides/node');
-const configInterfacedExterns = require('eslint-config-interfaced/overrides/externs');
-
-const resolveModulePath = (packageName) => {
-	const packageInfoPath = require.resolve(`${packageName}/package.json`);
-	return join(dirname(packageInfoPath), require(packageInfoPath).module);
-};
-
 module.exports = {
 	extends: 'interfaced',
 	overrides: [
 		{
-			...configInterfacedEsm,
 			files: ['lib/**/*.js'],
+			extends: 'interfaced/esm',
 			settings: {
-				'import/resolver': {
-					alias: [
-						['zb', resolveModulePath('zombiebox')]
-					]
-				}
+				'import/resolver': 'zombiebox'
 			},
 			rules: {
-				...configInterfacedEsm.rules,
 				'new-cap': 'off',
-				'import/no-unresolved': ['error', {ignore: ['^generated/']}]
 			}
 		},
 		{
-			...configInterfacedNode,
-			files: ['index.js']
+			files: ['index.js'],
+			extends: 'interfaced/node',
 		},
 		{
-			...configInterfacedExterns,
 			files: ['externs/**/*.js'],
+			extends: 'interfaced/externs',
 			rules: {
-				...configInterfacedExterns.rules,
+				// TODO: cleanup externs to reenable all of the rules
 				'no-undef': 'off',
+				'jsdoc/require-returns-check': 'off',
 				'interfaced/no-restricted-jsdoc-tags': 'off'
 			}
 		}

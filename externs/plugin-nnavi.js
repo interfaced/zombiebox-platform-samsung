@@ -1,5 +1,5 @@
 /**
- * @constructor
+ * @class
  * @extends {HTMLElement}
  */
 const PluginNNAVI = function() {};

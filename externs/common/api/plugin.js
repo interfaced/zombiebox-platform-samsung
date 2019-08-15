@@ -1,5 +1,5 @@
 /**
- * @constructor
+ * @class
  */
 Common.API.Plugin = function() {};
 
