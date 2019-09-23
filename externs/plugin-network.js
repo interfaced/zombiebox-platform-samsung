@@ -1,5 +1,5 @@
 /**
- * @class
+ * @constructor
  */
 const PluginNetwork = function() {};
 
@@ -17,7 +17,7 @@ PluginNetwork.prototype.CheckPhysicalConnection = function(interfaceType) {};
 /**
  * @param {number} interfaceType
  * @return {number} 1 if HTTP is operating successfully, 0 if HTTP is not available, -1 if error
- * @class
+ * @constructor
  */
 PluginNetwork.prototype.CheckHTTP = function(interfaceType) {
 	return 0;

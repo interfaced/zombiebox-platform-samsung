@@ -1,5 +1,5 @@
 /**
- * @class
+ * @constructor
  */
 Common.API.TVKeyValue = function() {};
 

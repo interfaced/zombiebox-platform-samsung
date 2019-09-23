@@ -1,5 +1,5 @@
 /**
- * @class
+ * @constructor
  * @extends {HTMLElement}
  */
 const MediaPlugin = function() {};

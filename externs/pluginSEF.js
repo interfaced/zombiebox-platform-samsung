@@ -1,5 +1,5 @@
 /**
- * @class
+ * @constructor
  */
 function PluginSEF() {}
 

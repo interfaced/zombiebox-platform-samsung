@@ -1,3 +1,8 @@
+# 2.1.1 (23.09.2019)
+
+## Fixes
+* Fix GCC warnings about @class usage.
+
 # 2.1.0 (15.09.2019)
 
 ## Features

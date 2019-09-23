@@ -1,6 +1,6 @@
 {
   "name": "zombiebox-platform-samsung",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Samsung Orsay platfrom adapter for ZombieBox Smart TV framework",
   "author": "Interfaced (http://interfaced.tv)",
   "license": "MIT",

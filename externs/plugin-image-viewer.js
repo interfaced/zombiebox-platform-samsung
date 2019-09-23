@@ -1,5 +1,5 @@
 /**
- * @class
+ * @constructor
  * @extends {MediaPlugin}
  */
 const PluginImageViewer = function() {};

@@ -1,5 +1,5 @@
 /**
- * @class
+ * @constructor
  * @extends {HTMLElement}
  */
 const PluginExternalWidgetInterface = function() {};

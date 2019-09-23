@@ -21,6 +21,7 @@ module.exports = {
 			rules: {
 				// TODO: cleanup externs to reenable all of the rules
 				'no-undef': 'off',
+				'jsdoc/check-tag-names': 'off',
 				'jsdoc/require-returns-check': 'off',
 				'interfaced/no-restricted-jsdoc-tags': 'off'
 			}

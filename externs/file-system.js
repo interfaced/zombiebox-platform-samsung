@@ -1,5 +1,5 @@
 /**
- * @class
+ * @constructor
  */
 function SamsungFileSystem() {}
 
@@ -83,7 +83,7 @@ SamsungFileSystem.prototype.readDir = function(directoryPath) {};
 /**
  * Internal class.
  * @param {string} path
- * @class
+ * @constructor
  */
 function SamsungFileSystemPointer(path) {}
 
